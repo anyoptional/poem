@@ -200,11 +200,7 @@ class _AddPoemScreenState extends State<AddPoemScreen> {
     );
 
     if (poem != null && mounted) {
-      context.pushReplacementNamed(
-        AppRoutes.viewPoem,
-        pathParameters: {'id': poem.id.toString()},
-        extra: poem,
-      );
+      context.pop();
     }
   }
 
